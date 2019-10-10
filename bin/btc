@@ -1,0 +1,72 @@
+#!/usr/bin/env node
+
+'use strict';
+
+var program = require('commander');
+var chalk = require('chalk');
+const inquirer = require('inquirer')
+var options = {
+  cmd: '',
+  projectName: '',
+  mirror: 'default',
+  language: 'en'
+}
+program
+  .version(require('../package').version, '-v, --version')
+  .usage('<cmd> [project-name]')
+  .option('-m, --mirror <mirror>', 'Select mirror like: npm, cnpm, taobao', /^(npm|cnpm|taobao|nj|rednpm|skimdb|yarn)$/i)
+  .option('-l, --language <language>', 'Select language: en / cn', selectLanguage)
+  .on('-h, --help', help);
+
+program
+  .command('create')
+  .action(async function () {
+    const bumps = ['vue-element']
+
+    const {
+      bump
+    } = await inquirer.prompt([{
+      name: 'bump',
+      message: 'Select project type:',
+      type: 'list',
+      choices: [
+        ...bumps,
+      ]
+    }, ])
+    if (bump) {
+      const {
+        projectName
+      } = await inquirer.prompt([{
+        name: 'projectName',
+        message: `set your project name?`,
+        type: 'input'
+      }])
+      switchCommand('create', { template: bump, project: projectName, mirror: options.mirror, language: options.language });
+    }
+  });
+
+program.parse(process.argv);
+
+function switchCommand(cmd, args) {
+  if (cmd) {
+    require('../lib/' + cmd)(args);
+  } else {
+    setTimeout(program.help, 0);
+  }
+}
+
+function selectLanguage(language) {
+  if (language !== 'en' && language !== 'cn') {
+    language = 'en';
+  }
+  options.language = language;
+  return language;
+}
+
+function help() {
+  console.log('  Commands:');
+  console.log();
+  console.log(`     ${chalk.green('create')}           create a new application using a template in the current folder `);
+  console.log();
+  console.log('  All commands can be run with -h (or --help) for more information.')
+}

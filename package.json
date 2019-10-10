@@ -1,0 +1,46 @@
+{
+  "name": "@btc/btc-cli",
+  "version": "1.0.2",
+  "description": "Create framework with no build configuration.",
+  "main": "bin/btc",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "preferGlobal": true,
+  "bin": {
+    "btc-cli": "./bin/btc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dandelion936/btc-cli.git"
+  },
+  "scripts": {
+    "build": "node scripts/build.js"
+  },
+  "keywords": [
+    "cli",
+    "btc-cli",
+    "webpack"
+  ],
+  "author": "'zhaozhong' <'zhaozhong936@gmail.com'>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "7.6.3",
+    "@babel/plugin-proposal-class-properties": "7.5.5",
+    "@babel/preset-env": "7.6.3",
+    "@babel/preset-typescript": "7.6.0",
+    "@types/node": "12.7.12"
+  },
+  "dependencies": {
+    "chalk": "2.4.2",
+    "commander": "3.0.2",
+    "cross-spawn": "7.0.1",
+    "empty-dir": "2.0.0",
+    "fs-extra": "8.1.0",
+    "inquirer": "7.0.0",
+    "through2": "3.0.1",
+    "validate-npm-package-name": "3.0.0",
+    "vinyl-fs": "3.0.3"
+  },
+  "homepage": "https://github.com/dandelion936/btc-cli"
+}
