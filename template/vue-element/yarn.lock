@@ -602,9 +602,9 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
-"@d2-admin/filters-dayjs@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@d2-admin/filters-dayjs/-/filters-dayjs-1.0.3.tgz#87647f8d6864d20e12e14277fc96c7746263a341"
+"@d2-admin/filters-dayjs@1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@d2-admin/filters-dayjs/-/filters-dayjs-1.0.4.tgz#53699a560ddc4557a4a735a6d35e488ec79b58d6"
   dependencies:
     core-js "^2.6.5"
     dayjs "^1.8.12"
@@ -1822,7 +1822,7 @@ babel-register@^6.26.0:
     mkdirp "^0.5.1"
     source-map-support "^0.4.15"
 
-babel-runtime@6.x, babel-runtime@^6.0.0, babel-runtime@^6.22.0, babel-runtime@^6.26.0:
+babel-runtime@6.x, babel-runtime@^6.0.0, babel-runtime@^6.11.6, babel-runtime@^6.22.0, babel-runtime@^6.26.0:
   version "6.26.0"
   resolved "https://registry.yarnpkg.com/babel-runtime/-/babel-runtime-6.26.0.tgz#965c7058668e82b55d7bfe04ff2337bc8b5647fe"
   dependencies:
@@ -2413,6 +2413,14 @@ cli-width@^2.0.0:
 clipboard-polyfill@^2.8.1:
   version "2.8.1"
   resolved "https://registry.yarnpkg.com/clipboard-polyfill/-/clipboard-polyfill-2.8.1.tgz#a53fb77e9d8bac0a3db6792f5815a8979e585f61"
+
+clipboard@2.0.4:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/clipboard/-/clipboard-2.0.4.tgz#836dafd66cf0fea5d71ce5d5b0bf6e958009112d"
+  dependencies:
+    good-listener "^1.2.2"
+    select "^1.1.2"
+    tiny-emitter "^2.0.0"
 
 clipboardy@^2.0.0:
   version "2.1.0"
@@ -3104,6 +3112,10 @@ delayed-stream@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/delayed-stream/-/delayed-stream-1.0.0.tgz#df3ae199acadfb7d440aaae0b29e2272b24ec619"
 
+delegate@^3.1.2:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/delegate/-/delegate-3.2.0.tgz#b66b71c3158522e8ab5744f720d8ca0c2af59166"
+
 delegates@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/delegates/-/delegates-1.0.0.tgz#84c6e159b81904fdca59a0ef44cd870d31250f9a"
@@ -3211,6 +3223,12 @@ dom-serializer@0:
   dependencies:
     domelementtype "^2.0.1"
     entities "^2.0.0"
+
+dom7@^2.1.3:
+  version "2.1.5"
+  resolved "https://registry.yarnpkg.com/dom7/-/dom7-2.1.5.tgz#a79411017800b31d8400070cdaebbfc92c1f6377"
+  dependencies:
+    ssr-window "^2.0.0"
 
 domain-browser@^1.1.1:
   version "1.2.0"
@@ -4409,6 +4427,12 @@ globby@^9.2.0:
     ignore "^4.0.3"
     pify "^4.0.1"
     slash "^2.0.0"
+
+good-listener@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/good-listener/-/good-listener-1.2.2.tgz#d53b30cdf9313dffb7dc9a0d477096aa6d145c50"
+  dependencies:
+    delegate "^3.1.2"
 
 graceful-fs@^4.1.11, graceful-fs@^4.1.15, graceful-fs@^4.1.2, graceful-fs@^4.1.3, graceful-fs@^4.1.6:
   version "4.2.1"
@@ -6380,6 +6404,10 @@ mockjs@^1.0.1-beta3:
   dependencies:
     commander "*"
 
+moment@2.29.2:
+  version "2.29.2"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.2.tgz#00910c60b20843bcba52d37d58c628b47b1f20e4"
+
 move-concurrently@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/move-concurrently/-/move-concurrently-1.0.1.tgz#be2c005fda32e0b29af1f05d7c4b33214c701f92"
@@ -8191,6 +8219,10 @@ select-hose@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/select-hose/-/select-hose-2.0.0.tgz#625d8658f865af43ec962bfc376a37359a4994ca"
 
+select@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/select/-/select-1.1.2.tgz#0e7350acdec80b1108528786ec1d4418d11b396d"
+
 selfsigned@^1.10.4:
   version "1.10.4"
   resolved "https://registry.yarnpkg.com/selfsigned/-/selfsigned-1.10.4.tgz#cdd7eccfca4ed7635d47a08bf2d5d3074092e2cd"
@@ -8526,6 +8558,14 @@ sshpk@^1.7.0:
     safer-buffer "^2.0.2"
     tweetnacl "~0.14.0"
 
+ssr-window@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/ssr-window/-/ssr-window-1.0.1.tgz#30752a6a4666e7767f0b7e6aa6fc2fdbd0d9b369"
+
+ssr-window@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/ssr-window/-/ssr-window-2.0.0.tgz#98c301aef99523317f8d69618f0010791096efc4"
+
 ssri@^5.2.4:
   version "5.3.0"
   resolved "https://registry.yarnpkg.com/ssri/-/ssri-5.3.0.tgz#ba3872c9c6d33a0704a7d71ff045e5ec48999d06"
@@ -8793,6 +8833,13 @@ svgo@^1.0.0:
     unquote "~1.1.1"
     util.promisify "~1.0.0"
 
+swiper@^4.0.7:
+  version "4.5.1"
+  resolved "https://registry.yarnpkg.com/swiper/-/swiper-4.5.1.tgz#ed43998e780ceb478610079c8d23fd425eca636f"
+  dependencies:
+    dom7 "^2.1.3"
+    ssr-window "^1.0.1"
+
 symbol-tree@^3.2.2:
   version "3.2.4"
   resolved "https://registry.yarnpkg.com/symbol-tree/-/symbol-tree-3.2.4.tgz#430637d248ba77e078883951fb9aa0eed7c63fa2"
@@ -8934,6 +8981,10 @@ timers-browserify@^2.0.4:
 timsort@^0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/timsort/-/timsort-0.3.0.tgz#405411a8e7e6339fe64db9a234de11dc31e02bd4"
+
+tiny-emitter@^2.0.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/tiny-emitter/-/tiny-emitter-2.1.0.tgz#1d1a56edfc51c43e863cbb5382a72330e3555423"
 
 tmp@^0.0.33:
   version "0.0.33"
@@ -9302,6 +9353,13 @@ vm-browserify@^1.0.1:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/vm-browserify/-/vm-browserify-1.1.0.tgz#bd76d6a23323e2ca8ffa12028dc04559c75f9019"
 
+vue-awesome-swiper@3.1.3:
+  version "3.1.3"
+  resolved "https://registry.yarnpkg.com/vue-awesome-swiper/-/vue-awesome-swiper-3.1.3.tgz#05500b501ffb3fec9bf7eb9985bcf4ae8360ed9e"
+  dependencies:
+    object-assign "^4.1.1"
+    swiper "^4.0.7"
+
 vue-cli-plugin-i18n@^0.6.0:
   version "0.6.0"
   resolved "https://registry.yarnpkg.com/vue-cli-plugin-i18n/-/vue-cli-plugin-i18n-0.6.0.tgz#8b15a5e817b6f55a05e411a565f7f3c5bb86c16b"
@@ -9366,6 +9424,12 @@ vue-i18n-extract@^0.4.13:
 vue-i18n@^8.0.0, vue-i18n@^8.11.2:
   version "8.12.0"
   resolved "https://registry.yarnpkg.com/vue-i18n/-/vue-i18n-8.12.0.tgz#25b56e9fab7e78a0ff58b8b4fba336ad328cce11"
+
+vue-image-crop-upload@2.5.0:
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/vue-image-crop-upload/-/vue-image-crop-upload-2.5.0.tgz#2dcf499e5b4944bc5077fc30b5f24d5e977f313c"
+  dependencies:
+    babel-runtime "^6.11.6"
 
 vue-jest@^3.0.4:
   version "3.0.4"
